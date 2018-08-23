@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imgbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/camera"/>
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_cardCollapsedHeight="1dp"
+        app:mtf_labelColor="@color/colorAccent"
+        app:mtf_openKeyboardOnFocus="true"
+        app:mtf_image="@drawable/name"
+        >
+        <EditText
+
+            android:id="@+id/editFirstName"
+            android:hint="                      First name"
+            android:textColorHint="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_cardCollapsedHeight="1dp"
+        app:mtf_labelColor="@color/colorAccent"
+        app:mtf_openKeyboardOnFocus="true"
+        app:mtf_image="@drawable/name"
+        >
+    <EditText
+
+        android:hint="                      Last name"
+        android:textColorHint="#000"
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_cardCollapsedHeight="1dp"
+            app:mtf_openKeyboardOnFocus="true"
+            app:mtf_labelColor="@color/colorAccent"
+            app:mtf_image="@drawable/p"
+            >
+    <EditText
+        android:inputType="number"
+        android:hint="                      Phone number"
+        android:textColorHint="#000"
+        android:id="@+id/editNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_cardCollapsedHeight="1dp"
+        app:mtf_labelColor="@color/colorAccent"
+        app:mtf_image="@drawable/temail"
+        app:mtf_openKeyboardOnFocus="true"
+        >
+    <EditText
+        android:textColorHint="#000"
+        android:inputType="textEmailAddress"
+        android:hint="                      Email Address"
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_weight="0.5"
+            android:onClick="save"
+            android:textColor="#fff"
+
+            android:background="#09ab9e"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="0.5"
+            android:onClick="cancel"
+            android:textColor="#fff"
+            android:background="#C70039  "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
